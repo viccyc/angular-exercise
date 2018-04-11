@@ -15,11 +15,14 @@
       </div>
     </div>
 
-    <div class="main">
+    <div class="main" ng-controller="MainController">
       <div class="container">
 
-        <h1>  </h1>
-
+        <p class="title"> {{ product.name | uppercase }}</p>
+        <h1>{{ title }}</h1>
+        <h2>{{ promo }}</h2>
+        <p class="price"> {{ product.price | currency }}</p>
+        <p class="date"> {{ product.pubdate | date }} </p>
       </div>
     </div>
 
